@@ -1,0 +1,13 @@
+{
+    "name": "ConvertMoney",
+    "alias": "convertmoney",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\ConvertMoney\\Providers\\ConvertMoneyServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}
