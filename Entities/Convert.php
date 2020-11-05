@@ -23,7 +23,7 @@ class Convert extends Model
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, "https://api.cambio.today/v1/quotes/EUR/PEN/json?quantity=2&key=5235|zA4mrWtCr*f33HFpdF7b~cHLv^*3rrsW");
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-        $res = curl_exec($ch);
+        $res = json_decode(curl_exec($ch));
         curl_close($ch);
         $value_euro = $res->result->value;
         return $value_euro;
