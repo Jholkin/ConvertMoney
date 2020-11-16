@@ -11,8 +11,6 @@ class Convert extends Model
     public function convert($price)
     {
         $price_converted = $price * $this->valueEuro();
-        echo "aqui";
-        dd($price_converted);
 
         return $price_converted;
     }
